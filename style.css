@@ -1,0 +1,430 @@
+/*  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');*/
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Readex+Pro:wght@500;600&display=swap');
+
+   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: linear-gradient( 109.2deg,  rgba(249,174,240,1) 6.5%, rgba(139,144,250,1) 97.1% ); 
+
+	/*
+	 #f9aef0 - hex code of left body color 
+	#AEF9B7 - hex code for complementary of above color
+
+
+
+	 #8b90fa - hex code of right body color 
+	#FAF58B - hex code for complementary of above color
+
+
+
+
+	left: rgba(255, 251, 169, 1) or #FFFBA9 is preferred color for buttons
+
+	right:  rgba(255, 244, 19, 1) or #FFF413 is preferred color for buttons
+
+
+	*/
+
+
+}
+
+main{
+		font-family: 'Readex Pro', verdana, sans-serif;
+		height: 65vh;
+
+}
+
+.form {
+	height: 35vh;
+	justify-content: center;
+	align-items: center;
+
+	*
+
+}
+
+h1 {
+	font-family: 'Oswald','Readex Pro', verdana, sans-serif;
+	text-align: center;
+	font-size: 350%;
+	margin-top: 20px;
+}
+
+.container{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 18vh;
+
+
+	/**/
+}
+
+#date{
+	width: 350px;
+	height: 45px;
+	border-radius: 11px;
+	padding: 8px 8px 8px 28px;
+	font-size: 2.9vh;
+	margin-top: 14px;
+	font-family: courier, monospace;
+	font-weight: 550;
+}
+
+label{
+	margin-left: 5px;
+	font-size: 3vh;
+	font-family: 'Readex Pro', verdana, sans-serif;
+
+
+}
+
+.date-region, input{
+	display: block;
+}
+
+.date-region{
+	align-items: left;
+}
+
+
+/*
+		Below code is only for buttons
+		#1
+*/
+
+
+.btn-region{
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	/**/
+
+}
+
+
+
+/*
+.calc{
+		justify-content: left;
+		align-items: left;
+		margin-right: 5px;
+		padding: 14px;
+		width: 50%;
+		font-size: 2.5vh;
+		font-family: verdana, sans-serif;
+
+}
+
+.clear{
+		justify-content: right;
+		align-items: right;
+/*		margin-left: 50px;  *
+		padding: 14px;
+		width: 50%;
+		font-size: 2.5vh;
+		font-family: verdana, sans-serif;
+}
+*/
+
+/*
+		#1
+*/
+
+
+
+
+
+
+
+
+/*
+		Below code is for button1 hover animation 
+		#3  
+		width 130px
+		  height: 40px;
+
+*/
+
+/*button {
+  margin: 20px;
+}*/
+
+.custom-one {
+			justify-content: left;
+		align-items: left;
+		margin-right: 5px;
+		font-size: 2.5vh;
+
+  width: 50%;
+
+  color: #000;
+  border-radius: 5px;
+  padding: 14px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+
+
+/*
+btn-1
+background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+
+
+
+#ff9700 for rgba(255,151,0,1)      :   its complementary color is #0068FF or rgba(0, 104, 255, 1)
+
+#fb4b02 for rgba(251,75,2,1)				:   its complementary color is #02B2FB or rgba(2, 178, 251, 1)
+*/
+
+
+
+.btn-1 {
+	background: linear-gradient(0deg, rgba(255, 251, 169, 1) 0%, rgba(255, 244, 19, 1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-1 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-1:before,
+.btn-1:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 244, 19, 1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-1:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-1:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-1:hover{
+  color: rgba(255, 244, 19, 1);
+  background: transparent;
+}
+.btn-1:hover:before {
+  height: 100%;
+}
+.btn-1:hover:after {
+  width: 100%;
+}
+.btn-1 span:before,
+.btn-1 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(255, 244, 19, 1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-1 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-1 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-1 span:hover:before {
+  height: 100%;
+}
+.btn-1 span:hover:after {
+  width: 100%;
+}
+
+.btn-1:active{
+    box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+    transform: scale(.98);
+}
+
+/*
+		#3
+*/
+
+
+
+/*
+		Below code is for button2 hover animation 
+		#4 
+		width 130px
+		  height: 40px;
+
+*/
+
+/*button {
+  margin: 20px;
+}*/
+
+.custom-two {
+			justify-content: left;
+		align-items: left;
+		margin-right: 5px;
+		font-size: 2.5vh;
+
+  width: 50%;
+
+  color: #000;
+  border-radius: 5px;
+  padding: 14px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+.btn-2 {
+	background: linear-gradient(0deg, rgba(255, 251, 169, 1) 0%, rgba(255, 244, 19, 1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-2 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-2:before,
+.btn-2:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 244, 19, 1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-2:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-2:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2:hover{
+  color: rgba(255, 244, 19, 1);
+  background: transparent;
+}
+.btn-2:hover:before {
+  height: 100%;
+}
+.btn-2:hover:after {
+  width: 100%;
+}
+.btn-2 span:before,
+.btn-2 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(255, 244, 19, 1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-2 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-2 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-2 span:hover:before {
+  height: 100%;
+}
+.btn-2 span:hover:after {
+  width: 100%;
+}
+
+.btn-2:active{
+    box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+    transform: scale(.98);
+}
+
+/*
+		#4
+*/
+
+.age-sent{
+		margin-top: 5vh;
+		text-align: center;
+		width: 100%;
+		height: 55px;
+		font-size: 5vh;
+
+
+		
+}
+
+/
+#para{
+		visibility: hidden;
+}*/
