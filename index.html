@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+<title>Age Calculator</title>
+</head>
+<body>
+<header>
+	<h1>AGE CALCULATOR</h1>
+</header>
+<main>
+
+	<div class="container" id="container">
+		<div class="form">
+			<div class="date-region">
+				<label for="date">Enter Date of Birth</label>
+				<input name="date" type="date" min="1900-01-01" required id="date" class="date"  />
+			</div>
+
+		<br />
+
+			<div class="btn-region">
+				<button type="submit" class="calc custom-one btn-1" id="btn" value="Submit" onclick="accurateAge()"><span><b>Calculate</b></span></button>
+				<button type="reset" class="clear custom-two btn-2" value="Reset" id="empty" onclick="empty()"><span><b>Reset</b></span></button>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="age-sent" id="age-sent">
+				<!--<p id="para"> Age = </p>-->
+				<p id="para" class="sent" id="sent"> Age = <span id="years">0</span> Years <span id="months">0</span> Months <span id="days">0</span> Days</p> 
+	</div>
+
+
+</main>
+<footer>
+<!--    ©    -->
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
